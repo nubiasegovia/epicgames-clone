@@ -6,11 +6,11 @@ const Header = () => {
     return (
         <StyledWrapper>
             <Logo src={EpicGamesWhiteLogo} alt="Epic Games logo" />
-            <HeaderOptions>store</HeaderOptions>
-            <HeaderOptions>novidades</HeaderOptions>
-            <HeaderOptions>perguntas frequentes</HeaderOptions>
-            <HeaderOptions>ajuda</HeaderOptions>
-            <HeaderOptions>unreal engine</HeaderOptions>
+            <NavOptions>store</NavOptions>
+            <NavOptions>novidades</NavOptions>
+            <NavOptions>perguntas frequentes</NavOptions>
+            <NavOptions>ajuda</NavOptions>
+            <NavOptions>unreal engine</NavOptions>
         </StyledWrapper>
     )
 }
@@ -25,13 +25,20 @@ const StyledWrapper = styled.div`
 
 const Logo = styled.img`
     height: 2.5em;
-    margin-left: 11px;
+    padding: 0 1em
 `;
 
-const HeaderOptions = styled.div`
+const NavOptions = styled.div`
     font-family: OpenSans,sans-serif,arial;
+    text-transform: uppercase;
     text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
     color: #ccc;
+    font-size: 0.61em;
+    letter-spacing: .075em;
+    padding: 0 1em;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
 `;
 
 export default Header;
