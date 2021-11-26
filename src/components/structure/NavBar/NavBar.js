@@ -8,12 +8,22 @@ const NavBar = () => {
     return (
         <StyledWrapper>
             <Nav>
-                <Logo src={EpicGamesWhiteLogo} alt="Epic Games logo" />
-                <NavOptions>store</NavOptions>
+                <Link href='/'>
+                    <Logo src={EpicGamesWhiteLogo} alt="Epic Games logo" />    
+                 </Link>
+                 <Link href='/'>
+                    <NavOptions>store</NavOptions>
+                </Link>
                 <NavOptions>novidades</NavOptions>
-                <NavOptions>perguntas frequentes</NavOptions>
-                <NavOptions>ajuda</NavOptions>
-                <NavOptions>unreal engine</NavOptions>
+                <Link href='https://www.epicgames.com/site/pt-BR/epic-games-store-faq'> 
+                    <NavOptions>perguntas frequentes</NavOptions>
+                </Link>
+                <Link href='https://www.epicgames.com/help/pt-BR/'>
+                    <NavOptions>ajuda</NavOptions>
+                </Link>
+                <Link href='https://www.unrealengine.com/en-US/'>
+                    <NavOptions>unreal engine</NavOptions>
+                </Link>
             </Nav>
             <Nav>
                 <NavOptions>
@@ -51,6 +61,10 @@ const Logo = styled.img`
     padding: 0 1em
 `;
 
+const Link = styled.a`
+    text-decoration: none;
+    cursor: pointer;
+`;
 const NavOptions = styled.div`
     font-family: OpenSans,sans-serif,arial;
     text-transform: uppercase;
