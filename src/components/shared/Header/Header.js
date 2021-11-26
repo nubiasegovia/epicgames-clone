@@ -3,7 +3,8 @@ import NavBar from "../../structure/NavBar/NavBar";
 
 const Header = () => {
     return (
-        <NavBar />
+        <header><NavBar /></header>
+
     )
 }
 
