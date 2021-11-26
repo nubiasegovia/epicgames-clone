@@ -25,7 +25,7 @@ const StyledFooter = styled.footer`
     letter-spacing: .075em;
     padding: 0 1em;
     font-weight: 400;
-    position: fixed;
+    position: relative;
     bottom: 0;
     font-size: 0.79em;
 `;

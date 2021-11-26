@@ -28,13 +28,17 @@ const NavBar = () => {
             <Nav>
                 <NavOptions>
                     < AiOutlineGlobal color="grey" size="2em"/></NavOptions>
-                <NavOptions>
-                    <RiUser3Fill color="grey" size="1.5em" />
-                    <p>Entrar</p>
-                </NavOptions>
-                <NavOptions>
-                    <DownloadEpic>Baixar epic games</DownloadEpic>
-                </NavOptions>
+                <Link href='/login'>
+                    <NavOptions>
+                        <RiUser3Fill color="grey" size="1.5em" />
+                        <p>Entrar</p>
+                    </NavOptions>
+                </Link>
+                <Link href='https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi'>
+                    <NavOptions>
+                        <DownloadEpic>Baixar epic games</DownloadEpic>
+                    </NavOptions>
+                </Link>
             </Nav>
                 
         </StyledWrapper>

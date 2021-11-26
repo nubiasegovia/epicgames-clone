@@ -1,6 +1,7 @@
 import axios from 'axios';
+import styled from 'styled-components';
 import { useNavigate } from "react-router-dom";
-import { AiOutlineHeart } from "react-icons/ai";
+import { BsPlusCircle } from "react-icons/bs";
 
 function Card(props) { 
 
@@ -21,21 +22,32 @@ function Card(props) {
     }
 
     return (
-        <div className='card'>
-
-        <div className='card-item' onClick={goToGamePage}>
-          <div className='card-image'>
-            <img src={props.image} alt={props.title}></img>
-          </div>
-          <h2 className='card-title'>{props.title}</h2>
-          <span className='card-preco'>{'R$ ' + props.preco}</span>
-        </div>
-  
-        <button className='wishlist' onClick={wishGame}>
-          <AiOutlineHeart color="red" />
-        </button>
-      </div>
+          <StyledCard>
+            <div className='card-item' onClick={goToGamePage}>
+              <div className='card-image'>
+                <Img src={props.image} alt={props.title} />
+              </div>
+              <h2 className='card-title'>{props.title}</h2>
+              <span className='card-preco'>{'R$ ' + props.preco}</span>
+            </div>
+            <button className='wishlist' onClick={wishGame}>
+              <BsPlusCircle color="grey" />
+            </button>
+          </StyledCard>
+          
     )
 }
+
+const StyledCard = styled.div`
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+`;
+
+const Img = styled.img`
+  width: 100%;
+  heigth: 222px;
+  border-radius: 16px;
+`;
 
 export default Card;
