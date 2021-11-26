@@ -25,8 +25,8 @@ function Card(props) {
           <StyledCard>
             <CardItens onClick={goToGamePage}>
                 <Img src={props.image} alt={props.title} />
-              <h3 className='card-title'>{props.title}</h3>
-              <span className='card-preco'>{'R$ ' + props.preco}</span>
+              <StyledTitle>{props.title}</StyledTitle>
+              <StyledPrice>{'R$ ' + props.preco}</StyledPrice>
             </CardItens>
             <button className='wishlist' onClick={wishGame}>
               <BsPlusCircle color="grey" />
@@ -46,13 +46,25 @@ const StyledCard = styled.div`
 const CardItens = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;align-items: center;
+  align-items: center;
+  padding: 4%;
 
 `;
+
+const StyledTitle = styled.div`
+  font-family: Hussar, sans serif;
+  color: #F5F5F5;
+  font-size: 1.2em;
+  line-height: 25px;
+  letter-spacing: -0.2px;
+`;
 const Img = styled.img`
-  width: 250px;
-  height: 150px;
+  width: 380px;
+  height: 200px;
   border-radius: 16px;
 `;
 
+const StyledPrice = styled.div`
+  color: #CCCCCC;
+`;
 export default Card;

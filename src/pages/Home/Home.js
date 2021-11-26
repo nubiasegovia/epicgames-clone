@@ -45,8 +45,9 @@ const StyledWrapper = styled.div`
     display: flex;    
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    max-width: 800px;
 `
 
 export default Home;
