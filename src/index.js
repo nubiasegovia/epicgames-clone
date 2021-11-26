@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import axios from 'axios';
 import styled from 'styled-components';
+import Game from './pages/Game/Game';
 
 axios.defaults.baseURL = 'https://nintendo-shop.herokuapp.com/';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
@@ -29,6 +30,7 @@ ReactDOM.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/game" element={<Game />} />
         </Routes>
       </BrowserRouter>
      </IndexWrapper>
