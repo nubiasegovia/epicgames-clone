@@ -27,7 +27,8 @@ function Game() {
   }, [mounted]);
 
   return (
-    <StyledWrapper>
+    <StyledWrapper> 
+
         <Card
           id={game.id}
           image={game.image}
@@ -36,18 +37,19 @@ function Game() {
           key={game.id}
         />
     </StyledWrapper>
-      );
- 
+    
+  );
 };
 
 
 const StyledWrapper = styled.div`
+  background-color: rgb(18, 18, 18);
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  max-width: 800px;
+  height: 100vh;
+  justify-content: center;
 `;
 
 export default Game;
