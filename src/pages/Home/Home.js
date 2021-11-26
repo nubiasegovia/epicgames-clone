@@ -20,6 +20,7 @@ function Home() {
   useEffect(() => {
     setMounted(true)
     getData()
+    // eslint-disable-next-line
   }, [mounted])
 
   return (
@@ -41,9 +42,9 @@ function Home() {
 }
 
 const StyledWrapper = styled.div`
-  display: flex;
-  height: 362px;
-  width: 824px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 `
 
 export default Home;

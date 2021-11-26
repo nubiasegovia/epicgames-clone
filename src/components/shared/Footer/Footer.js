@@ -19,7 +19,6 @@ const Footer = () => {
 const StyledFooter = styled.footer`
     display: flex;
     height: 200px;
-    width: 100%;
     background-color: #2a2a2a;
     color: #CCCCCC;
     letter-spacing: .075em;

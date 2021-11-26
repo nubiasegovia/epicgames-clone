@@ -16,8 +16,6 @@ axios.defaults.headers.post['Content-Type'] = 'application/json';
 const Background = styled.div`
   background-color: rgb(18, 18, 18);
   position: relative;
-  height: 100vh;
-  widht: 100wh;
 `;
 
 ReactDOM.render(
