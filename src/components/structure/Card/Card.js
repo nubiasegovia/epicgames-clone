@@ -23,11 +23,11 @@ function Card(props) {
 
     return (
           <StyledCard>
-            <div className='card-item' onClick={goToGamePage}>
+            <CardItens onClick={goToGamePage}>
                 <Img src={props.image} alt={props.title} />
               <h3 className='card-title'>{props.title}</h3>
               <span className='card-preco'>{'R$ ' + props.preco}</span>
-            </div>
+            </CardItens>
             <button className='wishlist' onClick={wishGame}>
               <BsPlusCircle color="grey" />
             </button>
@@ -43,9 +43,15 @@ const StyledCard = styled.div`
   align-items: center;
 `;
 
+const CardItens = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;align-items: center;
+
+`;
 const Img = styled.img`
   width: 250px;
-  heigth: 150px;
+  height: 150px;
   border-radius: 16px;
 `;
 
