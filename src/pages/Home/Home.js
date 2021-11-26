@@ -42,9 +42,11 @@ function Home() {
 }
 
 const StyledWrapper = styled.div`
-    display: flex;
-    flex-direction: row;
+    display: flex;    
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 `
 
 export default Home;

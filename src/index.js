@@ -13,22 +13,25 @@ axios.defaults.baseURL = 'https://nintendo-shop.herokuapp.com/';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 
-const Background = styled.div`
+const IndexWrapper = styled.div`
   background-color: rgb(18, 18, 18);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 ReactDOM.render(
   <React.StrictMode>
     <FontSyles />
     <Header />
-    <Background>
+    <IndexWrapper>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
-     </Background>
+     </IndexWrapper>
      <Footer />
   </React.StrictMode>,
   document.getElementById('root')

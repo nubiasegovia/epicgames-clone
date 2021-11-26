@@ -24,10 +24,8 @@ function Card(props) {
     return (
           <StyledCard>
             <div className='card-item' onClick={goToGamePage}>
-              <div className='card-image'>
                 <Img src={props.image} alt={props.title} />
-              </div>
-              <h2 className='card-title'>{props.title}</h2>
+              <h3 className='card-title'>{props.title}</h3>
               <span className='card-preco'>{'R$ ' + props.preco}</span>
             </div>
             <button className='wishlist' onClick={wishGame}>
@@ -39,14 +37,15 @@ function Card(props) {
 }
 
 const StyledCard = styled.div`
-  width: 45%;
+  width: 40%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 const Img = styled.img`
-  width: 100%;
-  heigth: 222px;
+  width: 250px;
+  heigth: 150px;
   border-radius: 16px;
 `;
 
