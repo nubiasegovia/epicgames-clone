@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useState } from 'react';
 import axios from 'axios';
-import EpicGamesWhiteLogo from "../../../assets/img/epicgames-whitelogo.png"
+import EpicGamesWhiteLogo from '../../assets/img/epicgames-whitelogo.png';
 
 function Login() {
 
