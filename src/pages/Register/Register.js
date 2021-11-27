@@ -44,7 +44,7 @@ function Register () {
                     <input type='password' required onChange={event => setPassword(event.target.value)} />
 
                     <label>Cofirmar senha</label>
-                    <input type='password' required onChange={event => setPassword(event.target.value)} />
+                    <input type='password' required onChange={event => setPasswordConfirmation(event.target.value)} />
 
                     <div className='terms'>
                         <input type='checkbox' />
@@ -70,3 +70,5 @@ function Register () {
     )
 
 }
+
+export default Register;
